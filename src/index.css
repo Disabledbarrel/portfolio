@@ -11,7 +11,7 @@
 body {
 	height: 100%;
 	font-family: "Montserrat", sans-serif;
-	background: #282f36;
+	background: rgb(18, 19, 21);
 	color: #eee;
 	line-height: 1.5;
 }
