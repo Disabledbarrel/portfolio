@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Quicksand:wght@300..700&display=swap");
+
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100%;
+	font-family: "Montserrat", sans-serif;
+	background: #282f36;
+	color: #eee;
+	line-height: 1.5;
+}
