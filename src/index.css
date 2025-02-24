@@ -1,4 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Quicksand:wght@300..700&display=swap");
+:root {
+	--primary-color: #eeeeee;
+	--secondary-color: #00adb5;
+	--background-color: #222831;
+	--primary-dark: #393e46;
+}
 
 *,
 *:before,
@@ -9,9 +14,34 @@
 }
 
 body {
-	height: 100%;
-	font-family: "Montserrat", sans-serif;
-	background: rgb(18, 19, 21);
-	color: #eee;
+	font-family: "Quicksand", cursive;
+	background: var(--background-color);
+	color: var(--primary-color);
 	line-height: 1.5;
+	text-align: center;
+}
+
+h1 {
+	font-weight: 500;
+	font-family: "Rubik", sans-serif;
+	font-size: 3em;
+}
+
+h1,
+h2 {
+	text-transform: uppercase;
+}
+
+h2 {
+	font-family: "Quicksand", sans-serif;
+	font-size: 1.5em;
+}
+
+h3 {
+	font-family: "Quicksand", sans-serif;
+	font-size: 2em;
+}
+
+a {
+	text-decoration: none;
 }

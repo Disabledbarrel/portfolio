@@ -10,77 +10,74 @@
 	border-radius: 50%;
 	margin: auto auto;
 }
-
-.bgImg {
-	height: 100%;
-	width: 100%;
-	position: relative;
-}
-
-.bgImg::after {
-	content: "";
-	background: url("../../assets/background.jpg");
-	background-size: cover;
-	position: absolute;
-	opacity: 0.3;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	z-index: -1;
-}
-
-h1,
-h2 {
-	font-weight: 400;
-	color: #eee;
-}
-
-h1 {
-	font-family: "Poiret One", cursive;
-}
-
-h2 {
-	font-family: "Quicksand", cursive;
-}
-
-h1.lgHeading,
-h2.lgHeading {
-	font-size: 4rem;
-}
-h1.smHeading,
-h2.smHeading {
-	margin-bottom: 2rem;
-	padding: 0.2rem 1rem;
-	background: rgba(52, 61, 71, 0.5);
-}
-a,
-.icoLink {
+.iconLink {
 	text-decoration: none;
-	color: #eee;
+	color: var(--primary-color);
 }
 
 main {
-	padding: 20px 40px;
+	margin: 50px 20px 0 20px;
+	padding: 40px 0 60px 0;
 	text-align: center;
+	border-bottom: 1px solid var(--primary-color);
 }
-main .icons {
+.icons {
 	margin-top: 1rem;
 	font-size: 2rem;
 	display: flex;
 	justify-content: center;
 	gap: 20px;
 }
-main .icons a {
+.icons a {
 	padding: 0.4rem;
 }
-main .icons a:hover {
-	color: #4fd8a6;
+.icons a:hover {
+	color: var(--secondary-color);
 	transition: all 0.5s ease-out;
 }
-main#home {
-	overflow: hidden;
-}
 .textSecondary {
-	color: #4fd8a6;
+	color: var(--secondary-color);
+}
+.description {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.btn {
+	background-color: var(--primary-color);
+	color: var(--background-color);
+	padding: 10px 20px;
+	border-radius: 6px;
+	font-weight: 700;
+	margin: auto auto;
+	width: 200px;
+}
+
+.btn i {
+	margin-left: 10px;
+}
+
+@media only screen and (min-width: 992px) {
+	main {
+		display: flex;
+		gap: 40px;
+		max-width: 700px;
+		width: 700px;
+		padding: 40px 20px 60px 20px;
+		margin: 100px auto auto auto;
+		justify-content: space-between;
+	}
+	.colorModeContainer {
+		order: 2;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.heroImg {
+		width: 300px;
+		height: 300px;
+	}
+	.infoContainer {
+		order: 1;
+	}
 }
